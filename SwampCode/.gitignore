@@ -2,6 +2,7 @@
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
+!src/main/resources/config.json
 !**/src/test/**/build/
 
 ### IntelliJ IDEA ###
