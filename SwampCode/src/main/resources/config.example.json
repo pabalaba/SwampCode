@@ -1,3 +1,4 @@
 {
-  "token": "xxx"
+  "token": "xxx",
+  "event_path": "com.groda.discordbot.event_listener"
 }

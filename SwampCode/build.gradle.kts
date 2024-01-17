@@ -9,6 +9,7 @@ version = "1.0"
 
 val jdaVersion = "5.0.0-beta.19"
 val gsonVersion = "2.10.1"
+val reflectionVersion = "0.10.2"
 
 repositories {
     mavenCentral()
@@ -17,6 +18,8 @@ repositories {
 dependencies {
     implementation("net.dv8tion:JDA:$jdaVersion")
     implementation("com.google.code.gson:gson:$gsonVersion")
+    implementation("org.reflections:reflections:$reflectionVersion")
+
 }
 
 tasks.withType<JavaCompile> {
