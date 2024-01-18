@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 public class MessageUpdatedListener extends ListenerAdapter implements IEventListener {
 
     /**
-     * Handles the message received event from the JDA library
+     * Handles the message update event from the JDA library
      *
      * @param event the event that will be listened at
      */
@@ -20,6 +20,9 @@ public class MessageUpdatedListener extends ListenerAdapter implements IEventLis
         handleEvent(event);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public <T extends Event> void handleEvent(T event) {
         if (!(event instanceof MessageUpdateEvent messageUpdateEvent))

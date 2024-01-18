@@ -1,4 +1,10 @@
 {
   "token": "xxx",
-  "event_path": "com.groda.discordbot.event_listener"
+  "event_path": "com.groda.discordbot.event_listener",
+  "command_path": "com.groda.discordbot.custom_command",
+  "prefix": "!",
+  "commands": {
+    "ping": "ping",
+    "say": "ripeti"
+  }
 }

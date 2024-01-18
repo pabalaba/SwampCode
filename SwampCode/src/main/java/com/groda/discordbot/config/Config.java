@@ -21,6 +21,9 @@ public class Config implements IConfig {
         this.file_path = file_path;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public JsonObject loadConfig() {
         Gson gson = new Gson();
