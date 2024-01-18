@@ -81,10 +81,10 @@ public class Bot {
         Reflections reflections = new Reflections(commandsPath);
         Set<Class<? extends ICommand>> classes = reflections.getSubTypesOf(ICommand.class);
 
-        List<ICommand> listeners = new ArrayList<>();
+        List<ICommand> commands = new ArrayList<>();
         classes.forEach(aClass -> {
             try {
-                listeners.add(aClass.getDeclaredConstructor().newInstance());
+                commands.add(aClass.getDeclaredConstructor().newInstance());
             } catch (InstantiationException |
                      IllegalAccessException |
                      InvocationTargetException |
@@ -93,6 +93,6 @@ public class Bot {
             }
         });
 
-        return listeners;
+        return commands;
     }
 }
