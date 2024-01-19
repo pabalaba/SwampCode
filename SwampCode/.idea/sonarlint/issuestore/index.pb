@@ -20,16 +20,6 @@ y
 Isrc/main/java/com/groda/discordbot/api/event_listener/IEventListener.java,d\5\d5bb2b4073f09feaa96be22c930d950e443996a3
 }
 Msrc/main/java/com/groda/discordbot/event_listener/MessageUpdatedListener.java,c\9\c963ad303a87b8dfc8fbf6a6119051c7451f2caf
-t
-Dsrc/main/java/com/groda/discordbot/api/custom_commands/ICommand.java,e\2\e2f47ade6f1d93237a93adaa2e704c6a70b63227
-s
-Csrc/main/java/com/groda/discordbot/custom_commands/PingCommand.java,8\3\8305ed05ce521d65e3a1407deb77d1d8a574356f
-v
-Fsrc/main/java/com/groda/discordbot/custom_commands/CommandManager.java,d\b\db4233412431447b9718773fda70a431a969fb3d
-r
-Bsrc/main/java/com/groda/discordbot/custom_commands/SayCommand.java,1\1\11dc6142b27e8930cd7f3b24dc3877001fab6101
-v
-Fsrc/main/java/com/groda/discordbot/api/custom_commands/ITogglable.java,1\4\14113fd12720789b6d963c563294e53e72d51bd1
 u
 Esrc/main/java/com/groda/discordbot/custom_command/CommandManager.java,d\b\dbcd6f779429657da336c575ee66370f0e75c12f
 r
@@ -42,3 +32,9 @@ s
 Csrc/main/java/com/groda/discordbot/api/custom_command/ICommand.java,5\a\5a20249318adacb12ce942a5de311b0a165156f7
 e
 5src/main/java/com/groda/discordbot/config/Config.java,e\3\e32669acd035256577b724b61d2a9eee90a86059
+|
+Lsrc/main/java/com/groda/discordbot/event_listener/AudioReceivedListener.java,3\c\3cdee08d64b485997e6615e31b965f52e916076e
+l
+<src/main/java/com/groda/discordbot/handler/VoiceHandler.java,d\1\d107688a0e9e065f2d2c578a9077de22e9089d4d
+r
+Bsrc/main/java/com/groda/discordbot/custom_command/EchoCommand.java,8\2\82707eed5d9f220f9b1f658e78b1ea4be12c567a

@@ -5,6 +5,7 @@
   "prefix": "!",
   "commands": {
     "ping": "ping",
-    "say": "ripeti"
+    "say": "ripeti",
+    "echo": "echo"
   }
 }

@@ -1,6 +1,0 @@
-
-s	java:S116	"RRename this field "COMMAND" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÑï²ùÿÿÿÿ8…ÂğÑ1
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(³‰™é8‹’ÁğÑ1
-M
-java:S1068	"+Remove this unused "COMMAND" private field.(ÚÑï²ùÿÿÿÿ8……ÂğÑ1

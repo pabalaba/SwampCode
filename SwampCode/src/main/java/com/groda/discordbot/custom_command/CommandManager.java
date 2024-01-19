@@ -40,6 +40,15 @@ public class CommandManager {
     }
 
     /**
+     * Retrieves a command
+     * @param commandText the command text
+     * @return the command
+     */
+    public ICommand getCommand(String commandText){
+        return commandMap.get(commandText);
+    }
+
+    /**
      * Adds a single command to the map of commands
      * @param command the command to add
      */

@@ -6,12 +6,16 @@ import com.groda.discordbot.api.event_listener.IEventListener;
 import com.groda.discordbot.config.Config;
 import com.groda.discordbot.custom_command.CommandManager;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
+import net.dv8tion.jda.api.utils.cache.CacheFlag;
 import org.reflections.Reflections;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Set;
 
@@ -21,8 +25,17 @@ public class Bot {
     public static final String PREFIX = CONFIG_FILE.get("prefix").getAsString();
 
     public static void main(String[] args) {
+
+        EnumSet<GatewayIntent> intents = EnumSet.of(
+                GatewayIntent.MESSAGE_CONTENT,
+                GatewayIntent.GUILD_VOICE_STATES,
+                GatewayIntent.GUILD_MESSAGES
+        );
+
         JDABuilder.createDefault(CONFIG_FILE.get("token").getAsString())
-                .enableIntents(GatewayIntent.MESSAGE_CONTENT)
+                .enableIntents(intents)
+                .setActivity(Activity.listening("Crazy Frog - Axel F"))
+                .enableCache(CacheFlag.VOICE_STATE)
                 .addEventListeners(loadEventListeners(CONFIG_FILE.get("event_path").getAsString()).toArray())
                 .build();
 
